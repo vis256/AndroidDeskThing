@@ -4,6 +4,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import ConnectionScreen from "./ConnectionScreen";
 import PlayScreen from "./PlayScreen";
 import { DeskThingServer } from "../server/DeskThingServer";
+import { StatusBar } from "expo-status-bar";
 
 export interface ServerState {
   connected: boolean;
@@ -80,6 +81,7 @@ export default function Index() {
         backgroundColor: "#ffffff",
       }}
     >
+      <StatusBar style="dark" hidden={true} />
       {connected ? (
         <>
           <PlayScreen serverState={serverState} />
