@@ -2,7 +2,7 @@ import asyncio
 import websockets
 import json
 import socket
-import aiohttp  # Add this import
+import aiohttp
 from aiohttp import web
 from winrt.windows.media.control import (GlobalSystemMediaTransportControlsSessionManager)
 from winrt.windows.storage.streams import (
@@ -10,7 +10,7 @@ from winrt.windows.storage.streams import (
 )
 from io import BytesIO
 from PIL import Image
-import base64  # Add this import
+import base64 
 
 # List to store connected WebSocket clients
 connected_clients = set()
@@ -112,8 +112,6 @@ async def previous_media():
             await current_session.try_skip_previous_async()
     except Exception as e:
         print(f"Error skipping to previous media: {e}")
-        
-
 #endregion
 
 #region WebSocket Server

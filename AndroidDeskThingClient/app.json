@@ -15,10 +15,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.AndroidDeskThingClient"
     },
     "androidStatusBar": {
-      "hidden": true
+      "hidden": true,
+      "backgroundColor": "#ffffff"
     },
     "androidNavigationBar": {
       "visible": "immersive"
@@ -43,6 +45,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e677415d-aada-4aa9-8ab5-f68d58066e82"
+      }
     }
   }
 }
